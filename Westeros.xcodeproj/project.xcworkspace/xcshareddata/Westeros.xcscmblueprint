@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "36BCC9945CD9FE09D79F261594F3DDF879B29C6B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C9C78453628F94851A3DBFE2F8F36C2D832524FE" : 9223372036854775807,
+    "36BCC9945CD9FE09D79F261594F3DDF879B29C6B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "288DFA91-A8F5-4B40-BC3B-60F80A27648E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C9C78453628F94851A3DBFE2F8F36C2D832524FE" : "..",
+    "36BCC9945CD9FE09D79F261594F3DDF879B29C6B" : "Westeros.Fernando\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Westeros",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Westeros.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/agbo\/westeros",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "36BCC9945CD9FE09D79F261594F3DDF879B29C6B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/smarrerof\/kc-sessions.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C9C78453628F94851A3DBFE2F8F36C2D832524FE"
+    }
+  ]
+}
