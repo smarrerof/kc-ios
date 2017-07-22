@@ -12,7 +12,7 @@ import UIKit
 final class ArrayDelegate<Element>: NSObject, UITableViewDelegate {
     
     typealias Elements = [Element]
-    typealias SelectRow = (Element, UITableView, UITableViewController?) -> Bool
+    typealias SelectRow = (Element, UITableView, UITableViewController?) -> Void
     
     
     private let _model: Elements

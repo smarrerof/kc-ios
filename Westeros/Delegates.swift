@@ -12,13 +12,11 @@ final class Delegates {
     
     static func housesDelegate(model: [House]) -> ArrayDelegate<House> {
         
-        return ArrayDelegate(model: model, selectRow: { (house: House, tableView: UITableView, controller: UITableViewController?) -> Bool in
+        return ArrayDelegate(model: model, selectRow: { (house: House, tableView: UITableView, controller: UITableViewController?) -> Void in
             
             // La mostramos
             let houseVC = HouseViewController(model: house)
             controller?.navigationController?.pushViewController(houseVC, animated: true)
-            
-            return true
         })
         
     }
