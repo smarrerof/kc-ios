@@ -12,13 +12,14 @@ import UIKit
 final class ArrayDelegate<Element>: NSObject, UITableViewDelegate {
     
     typealias Elements = [Element]
-    typealias SelectRow = (Element, UITableView, UINavigationController?) -> Bool
+    typealias SelectRow = (Element, UITableView, UITableViewController?) -> Bool
     
     
     private let _model: Elements
     private let _selectRow: SelectRow
     
-    public var navigationController: UINavigationController?
+    
+    public var controller: UITableViewController?
     
     
     init(model: Elements, selectRow: @escaping SelectRow) {
@@ -34,6 +35,6 @@ final class ArrayDelegate<Element>: NSObject, UITableViewDelegate {
         
         let element = _model[indexPath.row]
         
-        _selectRow(element, tableView, navigationController)
+        _selectRow(element, tableView, controller)
     }
 }

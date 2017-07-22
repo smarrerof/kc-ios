@@ -22,6 +22,7 @@ class ArrayTableViewController<Element>: UITableViewController {
         self.title = title
         tableView.dataSource = self.dataSource
         tableView.delegate = self.delegate
+        self.delegate.controller = self
     }
     
     required init?(coder aDecoder: NSCoder) {
