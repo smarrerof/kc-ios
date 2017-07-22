@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491E61CB1F24013E004142B8 /* ArrayDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E61CA1F24013E004142B8 /* ArrayDelegateTests.swift */; };
 		492F0B241F2370710031EBDC /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F0B221F2370710031EBDC /* MembersViewController.swift */; };
 		492F0B251F2370710031EBDC /* MembersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492F0B231F2370710031EBDC /* MembersViewController.xib */; };
 		492F0B271F2373BE0031EBDC /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F0B261F2373BE0031EBDC /* ArrayDataSource.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		491E61CA1F24013E004142B8 /* ArrayDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDelegateTests.swift; sourceTree = "<group>"; };
 		492F0B221F2370710031EBDC /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
 		492F0B231F2370710031EBDC /* MembersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersViewController.xib; sourceTree = "<group>"; };
 		492F0B261F2373BE0031EBDC /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				ED8E65161F0ECAA200BCC853 /* PersonTest.swift */,
 				EDE69E5F1F15607C00CE93C9 /* RepositoryTests.swift */,
 				492F0B281F2377F20031EBDC /* ArrayDataSourceTests.swift */,
+				491E61CA1F24013E004142B8 /* ArrayDelegateTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				ED8E65171F0ECAA200BCC853 /* PersonTest.swift in Sources */,
 				492F0B291F2377F20031EBDC /* ArrayDataSourceTests.swift in Sources */,
 				EDE69E601F15607C00CE93C9 /* RepositoryTests.swift in Sources */,
+				491E61CB1F24013E004142B8 /* ArrayDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
