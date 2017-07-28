@@ -10,7 +10,7 @@ import UIKit
 
 final class DataSources {
     
-    static func houseDataSource(model: [House]) -> ArrayDataSource<House> {
+    static func housesDataSource(model: [House]) -> ArrayDataSource<House> {
         
         return ArrayDataSource(model: model, cellMaker: {(house: House, tableView: UITableView) -> UITableViewCell in
                                 
@@ -28,7 +28,7 @@ final class DataSources {
         })
     }
     
-    static func personDataSource(model: [Person]) -> ArrayDataSource<Person> {
+    static func membersDataSource(model: [Person]) -> ArrayDataSource<Person> {
         
         return ArrayDataSource(model: model, cellMaker: {(person: Person, tableView: UITableView) -> UITableViewCell in
             
@@ -39,6 +39,23 @@ final class DataSources {
             }
             
             cell?.textLabel?.text = person.fullName
+            
+            return cell!
+        })
+    }
+    
+    static func seasonsDataSource(model: [Season]) -> ArrayDataSource<Season> {
+        
+        return ArrayDataSource(model: model, cellMaker: {(season: Season, tableView: UITableView) -> UITableViewCell in
+            
+            let cellID = "SeasonCell"
+            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+            if cell == nil {
+                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
+            }
+            
+            cell?.textLabel?.text = season.name
+            cell?.detailTextLabel?.text = "\(season.count) episodes"
             
             return cell!
         })
