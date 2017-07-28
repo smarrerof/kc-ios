@@ -9,7 +9,7 @@
 import XCTest
 @testable import Westeros
 
-class PersonTest: XCTestCase {
+class PersonTests: XCTestCase {
     
     var starkImage : UIImage!
     var lannisterImage : UIImage!
