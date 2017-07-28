@@ -8,8 +8,8 @@
 
 import Foundation
 
-typealias Episode = String
 typealias Episodes = Set<Episode>
+
 
 final class Season {
 
@@ -32,9 +32,9 @@ extension Season {
     
     func add(episode: Episode){
         
-        /*guard episode.season.name == self.name else {
+        guard episode.season.name == self.name else {
             return
-        }*/
+        }
         
         _episodes.insert(episode)
     }
@@ -61,13 +61,6 @@ extension Season {
     private var _proxyForHashable: String {
         return "\(name) \(_episodes.count)"
     }
-    
-    private var _proxyForComparable : String{
-        get{
-            return name.uppercased()
-        }
-    }
-
 }
 
 // MARK: - CustomStringConvertible
@@ -96,7 +89,7 @@ extension Season: Hashable {
 // MARK: - Comparable
 extension Season : Comparable {
     static func <(lhs: Season, rhs: Season) -> Bool {
-        return lhs._proxyForComparable < rhs._proxyForComparable
+        return lhs.releaseDate < rhs.releaseDate
     }
 }
 

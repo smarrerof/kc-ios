@@ -67,15 +67,19 @@ class SeasonTests: XCTestCase {
         
         let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
         
+        let episode1 = Episode(name: "Winter is coming", airDate: DateFormatter.formatDate(date: "2011/05/09")!, season: season)
+        
+        let episode2 = Episode(name: "The Kingsroad", airDate: DateFormatter.formatDate(date: "2011/05/16")!, season: season)
+        
         XCTAssertEqual(season.count, 0)
         
-        season.add(episode: "1")
+        season.add(episode: episode1)
         XCTAssertEqual(season.count, 1)
         
-        season.add(episode: "2")
+        season.add(episode: episode2)
         XCTAssertEqual(season.count, 2)
         
-        season.add(episode: "2")
+        season.add(episode: episode2)
         XCTAssertEqual(season.count, 2)
     }
 }
