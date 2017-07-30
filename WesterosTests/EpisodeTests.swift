@@ -22,15 +22,17 @@ class EpisodeTests: XCTestCase {
     }
     
     func testEpisodeCreation() {
-        let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
         
-        XCTAssertNotNil(Episode(name: "Winter is coming", airDate: DateFormatter.formatDate(date: "2011/05/09")!, season: season))
+        let season = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
+        
+        XCTAssertNotNil(Episode(name: "Winter is coming", airDate: Date.fromString(date: "2011/05/09")!, season: season))
     }
     
     func testEpisodeCustomStringConvertible() {
-        let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
         
-        let episode = Episode(name: "Winter is coming", airDate: DateFormatter.formatDate(date: "2011/05/09")!, season: season)
+        let season = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
+        
+        let episode = Episode(name: "Winter is coming", airDate: Date.fromString(date: "2011/05/09")!, season: season)
         
         XCTAssertEqual(episode.description, "Episode: \(episode.name)")
         
@@ -38,35 +40,36 @@ class EpisodeTests: XCTestCase {
     }
     
     func testEpisodeEquatable() {
-        let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
         
-        let lhs = Episode(name: "Winter is coming", airDate: DateFormatter.formatDate(date: "2011/05/09")!, season: season)
+        let season = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
         
-        var rhs = Episode(name: "Winter is coming", airDate: DateFormatter.formatDate(date: "2011/05/09")!, season: season)
+        let lhs = Episode(name: "Winter is coming", airDate: Date.fromString(date: "2011/05/09")!, season: season)
+        
+        var rhs = Episode(name: "Winter is coming", airDate: Date.fromString(date: "2011/05/09")!, season: season)
         
         XCTAssertEqual(lhs, rhs)
         
-        rhs = Episode(name: "The Kingsroad", airDate: DateFormatter.formatDate(date: "2011/05/16")!, season: season)
+        rhs = Episode(name: "The Kingsroad", airDate: Date.fromString(date: "2011/05/16")!, season: season)
         
         XCTAssertNotEqual(lhs, rhs)
     }
     
     func testEpisodeHashable() {
         
-        let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
+        let season = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
         
-        let episode = Episode(name: "Winter is coming", airDate: DateFormatter.formatDate(date: "2011/05/09")!, season: season)
+        let episode = Episode(name: "Winter is coming", airDate: Date.fromString(date: "2011/05/09")!, season: season)
         
         XCTAssertNotNil(episode.hashValue)
     }
     
     func testEpisodeComparison() {
         
-        let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
+        let season = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
         
-        let lhs = Episode(name: "Winter is coming", airDate: DateFormatter.formatDate(date: "2011/05/09")!, season: season)
+        let lhs = Episode(name: "Winter is coming", airDate: Date.fromString(date: "2011/05/09")!, season: season)
         
-        let rhs = Episode(name: "The Kingsroad", airDate: DateFormatter.formatDate(date: "2011/05/16")!, season: season)
+        let rhs = Episode(name: "The Kingsroad", airDate: Date.fromString(date: "2011/05/16")!, season: season)
         
         XCTAssertLessThan(lhs, rhs)
     }

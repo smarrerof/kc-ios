@@ -22,12 +22,12 @@
 		497A256D1F1D667D008499AF /* HousesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497A256B1F1D667D008499AF /* HousesViewController.xib */; };
 		49C603641F2A7CDF00BD1B14 /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603631F2A7CDF00BD1B14 /* SeasonTests.swift */; };
 		49C603661F2A7FD400BD1B14 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603651F2A7FD400BD1B14 /* Season.swift */; };
-		49C603681F2A805A00BD1B14 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603671F2A805A00BD1B14 /* DateFormatterExtensions.swift */; };
 		49C6036B1F2B028500BD1B14 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6036A1F2B028500BD1B14 /* Episode.swift */; };
 		49C6036F1F2B053900BD1B14 /* EpisodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6036E1F2B053900BD1B14 /* EpisodeTests.swift */; };
 		49C603741F2BC08600BD1B14 /* HouseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603731F2BC08600BD1B14 /* HouseFactory.swift */; };
 		49C603761F2BC0BE00BD1B14 /* SeasonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603751F2BC0BE00BD1B14 /* SeasonFactory.swift */; };
 		49C603781F2E307100BD1B14 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603771F2E307100BD1B14 /* DateExtensions.swift */; };
+		49C6037C1F2E342D00BD1B14 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6037B1F2E342D00BD1B14 /* ExtensionsTests.swift */; };
 		ED32F0421F1CB60D000408C4 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */; };
 		ED853EE81F0C47E100F04AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */; };
 		ED853EEF1F0C47E100F04AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED853EEE1F0C47E100F04AD6 /* Assets.xcassets */; };
@@ -71,12 +71,12 @@
 		497A256B1F1D667D008499AF /* HousesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HousesViewController.xib; sourceTree = "<group>"; };
 		49C603631F2A7CDF00BD1B14 /* SeasonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
 		49C603651F2A7FD400BD1B14 /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
-		49C603671F2A805A00BD1B14 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		49C6036A1F2B028500BD1B14 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		49C6036E1F2B053900BD1B14 /* EpisodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTests.swift; sourceTree = "<group>"; };
 		49C603731F2BC08600BD1B14 /* HouseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseFactory.swift; sourceTree = "<group>"; };
 		49C603751F2BC0BE00BD1B14 /* SeasonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonFactory.swift; sourceTree = "<group>"; };
 		49C603771F2E307100BD1B14 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		49C6037B1F2E342D00BD1B14 /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
 		ED853EE41F0C47E100F04AD6 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,7 +147,6 @@
 		49C603691F2A806200BD1B14 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				49C603671F2A805A00BD1B14 /* DateFormatterExtensions.swift */,
 				49C603771F2E307100BD1B14 /* DateExtensions.swift */,
 			);
 			name = Extensions;
@@ -209,6 +208,7 @@
 				491E61CA1F24013E004142B8 /* ArrayDelegateTests.swift */,
 				49C603631F2A7CDF00BD1B14 /* SeasonTests.swift */,
 				49C6036E1F2B053900BD1B14 /* EpisodeTests.swift */,
+				49C6037B1F2E342D00BD1B14 /* ExtensionsTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -381,7 +381,6 @@
 				49C603661F2A7FD400BD1B14 /* Season.swift in Sources */,
 				ED853EE81F0C47E100F04AD6 /* AppDelegate.swift in Sources */,
 				497A256C1F1D667D008499AF /* HousesViewController.swift in Sources */,
-				49C603681F2A805A00BD1B14 /* DateFormatterExtensions.swift in Sources */,
 				EDFDFA9F1F14128D00699250 /* HouseViewController.swift in Sources */,
 				49C603761F2BC0BE00BD1B14 /* SeasonFactory.swift in Sources */,
 				EDE69E5E1F155D9C00CE93C9 /* UIKitExtensions.swift in Sources */,
@@ -400,6 +399,7 @@
 				49C603641F2A7CDF00BD1B14 /* SeasonTests.swift in Sources */,
 				ED8E650D1F0EC0F700BCC853 /* HouseTests.swift in Sources */,
 				ED8E65171F0ECAA200BCC853 /* PersonTests.swift in Sources */,
+				49C6037C1F2E342D00BD1B14 /* ExtensionsTests.swift in Sources */,
 				492F0B291F2377F20031EBDC /* ArrayDataSourceTests.swift in Sources */,
 				EDE69E601F15607C00CE93C9 /* RepositoryTests.swift in Sources */,
 				491E61CB1F24013E004142B8 /* ArrayDelegateTests.swift in Sources */,

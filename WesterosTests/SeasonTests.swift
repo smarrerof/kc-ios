@@ -23,12 +23,12 @@ class SeasonTests: XCTestCase {
     
     func testSeasonCreation() {
         
-        XCTAssertNotNil(Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!))
+        XCTAssertNotNil(Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!))
     }
     
     func testSeasonCustomStringConvertible() {
         
-        let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
+        let season = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
         
         XCTAssertEqual(season.description, "Season: Season 1")
         
@@ -37,39 +37,39 @@ class SeasonTests: XCTestCase {
     
     func testSeasonEquatable() {
         
-        let lhs = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
-        var rhs = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
+        let lhs = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
+        var rhs = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
         
         XCTAssertEqual(lhs, rhs)
         
-        rhs = Season(name: "Season 2", releaseDate: DateFormatter.formatDate(date: "2012/04/01")!)
+        rhs = Season(name: "Season 2", releaseDate: Date.fromString(date: "2012/04/01")!)
         
         XCTAssertNotEqual(lhs, rhs)
     }
     
     func testSeasonHashable() {
         
-        let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
+        let season = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
         
         XCTAssertNotNil(season.hashValue)
     }
     
     func testSeasonComparison() {
         
-        let lhs = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
+        let lhs = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
         
-        let rhs = Season(name: "Season 2", releaseDate: DateFormatter.formatDate(date: "2012/04/01")!)
+        let rhs = Season(name: "Season 2", releaseDate: Date.fromString(date: "2012/04/01")!)
         
         XCTAssertLessThan(lhs, rhs)
     }
     
     func testSeasonAddEpisodes() {
         
-        let season = Season(name: "Season 1", releaseDate: DateFormatter.formatDate(date: "2011/05/09")!)
+        let season = Season(name: "Season 1", releaseDate: Date.fromString(date: "2011/05/09")!)
         
-        let episode1 = Episode(name: "Winter is coming", airDate: DateFormatter.formatDate(date: "2011/05/09")!, season: season)
+        let episode1 = Episode(name: "Winter is coming", airDate: Date.fromString(date: "2011/05/09")!, season: season)
         
-        let episode2 = Episode(name: "The Kingsroad", airDate: DateFormatter.formatDate(date: "2011/05/16")!, season: season)
+        let episode2 = Episode(name: "The Kingsroad", airDate: Date.fromString(date: "2011/05/16")!, season: season)
         
         XCTAssertEqual(season.count, 0)
         
