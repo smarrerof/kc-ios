@@ -11,9 +11,9 @@ import UIKit
 class ArrayTableViewController<Element>: UITableViewController {
 
     let dataSource: ArrayDataSource<Element>
-    let delegate: ArrayDelegate<Element>
+    let delegate: ArrayDelegate<Element>?
     
-    init(dataSource: ArrayDataSource<Element>, delegate: ArrayDelegate<Element>, title: String, style: UITableViewStyle) {
+    init(dataSource: ArrayDataSource<Element>, delegate: ArrayDelegate<Element>?, title: String, style: UITableViewStyle) {
      
         self.dataSource = dataSource
         self.delegate = delegate
@@ -22,7 +22,7 @@ class ArrayTableViewController<Element>: UITableViewController {
         self.title = title
         tableView.dataSource = self.dataSource
         tableView.delegate = self.delegate
-        self.delegate.controller = self
+        self.delegate?.controller = self
     }
     
     required init?(coder aDecoder: NSCoder) {

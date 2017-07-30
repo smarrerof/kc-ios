@@ -55,7 +55,24 @@ final class DataSources {
             }
             
             cell?.textLabel?.text = season.name
-            cell?.detailTextLabel?.text = "\(season.count) episodes"
+            cell?.detailTextLabel?.text = "\(season.releaseDate.toString()). \(season.count) episodes"
+            
+            return cell!
+        })
+    }
+    
+    static func episodesDataSource(model: [Episode]) -> ArrayDataSource<Episode> {
+        
+        return ArrayDataSource(model: model, cellMaker: {(episode: Episode, tableView: UITableView) -> UITableViewCell in
+            
+            let cellID = "EpisodeCell"
+            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+            if cell == nil {
+                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
+            }
+            
+            cell?.textLabel?.text = episode.name
+            cell?.detailTextLabel?.text = episode.airDate.toString()
             
             return cell!
         })

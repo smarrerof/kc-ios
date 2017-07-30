@@ -27,6 +27,7 @@
 		49C6036F1F2B053900BD1B14 /* EpisodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6036E1F2B053900BD1B14 /* EpisodeTests.swift */; };
 		49C603741F2BC08600BD1B14 /* HouseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603731F2BC08600BD1B14 /* HouseFactory.swift */; };
 		49C603761F2BC0BE00BD1B14 /* SeasonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603751F2BC0BE00BD1B14 /* SeasonFactory.swift */; };
+		49C603781F2E307100BD1B14 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603771F2E307100BD1B14 /* DateExtensions.swift */; };
 		ED32F0421F1CB60D000408C4 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */; };
 		ED853EE81F0C47E100F04AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */; };
 		ED853EEF1F0C47E100F04AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED853EEE1F0C47E100F04AD6 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		49C6036E1F2B053900BD1B14 /* EpisodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTests.swift; sourceTree = "<group>"; };
 		49C603731F2BC08600BD1B14 /* HouseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseFactory.swift; sourceTree = "<group>"; };
 		49C603751F2BC0BE00BD1B14 /* SeasonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonFactory.swift; sourceTree = "<group>"; };
+		49C603771F2E307100BD1B14 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
 		ED853EE41F0C47E100F04AD6 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				49C603671F2A805A00BD1B14 /* DateFormatterExtensions.swift */,
+				49C603771F2E307100BD1B14 /* DateExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				492F0B2B1F237B430031EBDC /* ArrayTableViewController.swift in Sources */,
+				49C603781F2E307100BD1B14 /* DateExtensions.swift in Sources */,
 				492F0B271F2373BE0031EBDC /* ArrayDataSource.swift in Sources */,
 				492F0B321F2382620031EBDC /* Delegates.swift in Sources */,
 				492F0B301F2381850031EBDC /* ArrayDelegate.swift in Sources */,

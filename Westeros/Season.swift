@@ -47,9 +47,9 @@ extension Season {
     }
     
     // Sorted [Episode]
-    /*func sortedEpisodes() -> [Episode] {
-        return _episodes()
-    }*/
+    func sortedEpisodes() -> [Episode] {
+        return _episodes.sorted()
+    }
 }
 
 extension Season {
