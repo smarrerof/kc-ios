@@ -9,12 +9,7 @@
 import UIKit
 
 
-// MARK: - Classes
-typealias Words = String
-typealias Members = Set<Person>
-
-
-final class House{
+final class House {
     
     let name    : String
     let sigil   : Sigil
@@ -30,25 +25,12 @@ final class House{
     }
 }
 
-
-final class Sigil{
-    
-    let description : String
-    let image       : UIImage
-    
-    init(image: UIImage, description : String) {
-        (self.image, self.description) = (image, description)
-    }
-    
-}
-
-
 extension House {
     var count : Int {
         return _members.count
     }
     
-    func add(person: Person){
+    func add(person: Person) {
         
         guard person.house.name == self.name else {
             return
@@ -70,15 +52,15 @@ extension House {
     }
 }
 
-extension House{
-    var proxyForEquality : String{
-        get{
+extension House {
+    var proxyForEquality : String {
+        get {
             return "\(name) \(words) \(count)"
         }
     }
     
-    var proxyForComparison : String{
-        get{
+    var proxyForComparison : String {
+        get {
             return name.uppercased()
         }
     }
@@ -87,7 +69,7 @@ extension House{
 
 
 // MARK: - Equatable
-extension House : Equatable{
+extension House : Equatable {
     static func ==(lhs: House, rhs: House) -> Bool {
         return lhs.proxyForEquality == rhs.proxyForEquality
     }
@@ -95,14 +77,14 @@ extension House : Equatable{
 }
 
 // MARK: - Hashable
-extension House : Hashable{
+extension House : Hashable {
     var hashValue: Int {
         return proxyForEquality.hashValue
     }
 }
 
 // MARK: - Comparable
-extension House : Comparable{
+extension House : Comparable {
     static func <(lhs: House, rhs: House) -> Bool {
         return lhs.proxyForComparison < rhs.proxyForComparison
     }

@@ -24,6 +24,8 @@
 		49C603761F2BC0BE00BD1B14 /* SeasonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603751F2BC0BE00BD1B14 /* SeasonFactory.swift */; };
 		49C603781F2E307100BD1B14 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603771F2E307100BD1B14 /* DateExtensions.swift */; };
 		49C6037C1F2E342D00BD1B14 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6037B1F2E342D00BD1B14 /* ExtensionsTests.swift */; };
+		49C6037E1F2E381100BD1B14 /* Sigil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6037D1F2E381100BD1B14 /* Sigil.swift */; };
+		49C603801F2E388B00BD1B14 /* _typelias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6037F1F2E388B00BD1B14 /* _typelias.swift */; };
 		ED32F0421F1CB60D000408C4 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */; };
 		ED853EE81F0C47E100F04AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */; };
 		ED853EEF1F0C47E100F04AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED853EEE1F0C47E100F04AD6 /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		49C603751F2BC0BE00BD1B14 /* SeasonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonFactory.swift; sourceTree = "<group>"; };
 		49C603771F2E307100BD1B14 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		49C6037B1F2E342D00BD1B14 /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		49C6037D1F2E381100BD1B14 /* Sigil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sigil.swift; sourceTree = "<group>"; };
+		49C6037F1F2E388B00BD1B14 /* _typelias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _typelias.swift; sourceTree = "<group>"; };
 		ED32F0411F1CB60D000408C4 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
 		ED853EE41F0C47E100F04AD6 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,7 +186,6 @@
 				ED8E65101F0EC24100BCC853 /* Models */,
 				49C603701F2BC03900BD1B14 /* Repository */,
 				ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */,
-				ED8E65181F0ECD8500BCC853 /* Person.swift */,
 				ED853EEE1F0C47E100F04AD6 /* Assets.xcassets */,
 				ED853EF01F0C47E100F04AD6 /* LaunchScreen.storyboard */,
 				ED853EF31F0C47E100F04AD6 /* Info.plist */,
@@ -209,7 +212,10 @@
 		ED8E65101F0EC24100BCC853 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49C6037F1F2E388B00BD1B14 /* _typelias.swift */,
+				49C6037D1F2E381100BD1B14 /* Sigil.swift */,
 				ED8E650E1F0EC23700BCC853 /* House.swift */,
+				ED8E65181F0ECD8500BCC853 /* Person.swift */,
 				49C603651F2A7FD400BD1B14 /* Season.swift */,
 				49C6036A1F2B028500BD1B14 /* Episode.swift */,
 			);
@@ -362,6 +368,8 @@
 				492F0B321F2382620031EBDC /* Delegates.swift in Sources */,
 				492F0B301F2381850031EBDC /* ArrayDelegate.swift in Sources */,
 				ED8E65191F0ECD8500BCC853 /* Person.swift in Sources */,
+				49C603801F2E388B00BD1B14 /* _typelias.swift in Sources */,
+				49C6037E1F2E381100BD1B14 /* Sigil.swift in Sources */,
 				ED8E650F1F0EC23700BCC853 /* House.swift in Sources */,
 				49C603661F2A7FD400BD1B14 /* Season.swift in Sources */,
 				ED853EE81F0C47E100F04AD6 /* AppDelegate.swift in Sources */,

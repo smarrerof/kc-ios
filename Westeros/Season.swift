@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias Episodes = Set<Episode>
-
 
 final class Season {
 
