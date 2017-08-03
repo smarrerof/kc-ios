@@ -41,7 +41,7 @@ class HouseViewController: UIViewController {
     
     func setupUI() {
         
-        // Creamos los botones del avigationController
+        // Creamos los botones del navigationController
         let wiki = UIBarButtonItem(title: "Wiki",
                                    style: .plain,
                                    target: self,
@@ -56,7 +56,7 @@ class HouseViewController: UIViewController {
         navigationItem.rightBarButtonItems = [members, wiki]
     }
     
-    func syncViewWithModel(){
+    func syncViewWithModel() {
         
         // model -> view
         houseNameView.text = "House \(model.name)"

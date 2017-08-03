@@ -25,13 +25,8 @@ final class Delegates {
         return ArrayDelegate(model: model, selectRow: { (season: Season, tableView: UITableView, controller: UITableViewController?) -> Void in
             
             // La mostramos
-            let episodesDataSource = DataSources.episodesDataSource(model: season.sortedEpisodes())
-            let episodesViewController = ArrayTableViewController(dataSource: episodesDataSource,
-                                                                 delegate: nil,
-                                                                 title: "Episodes",
-                                                                 style: .plain)
-            
-            controller?.navigationController?.pushViewController(episodesViewController, animated: true)
+            let seasonVC = SeasonViewController(model: season)
+            controller?.navigationController?.pushViewController(seasonVC, animated: true)
         })
     }
 }
