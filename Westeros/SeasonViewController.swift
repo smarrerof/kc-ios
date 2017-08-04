@@ -26,6 +26,7 @@ class SeasonViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupUI()
+        syncViewWithModel()
     }
     
     
@@ -49,8 +50,9 @@ class SeasonViewController: UIViewController {
     
     @objc func displayEpisodes() {
         let episodesDataSource = DataSources.episodesDataSource(model: model.sortedEpisodes())
+        let episodesDelegate = Delegates.episodesDelegate(model: model.sortedEpisodes())
         let episodesViewController = ArrayTableViewController(dataSource: episodesDataSource,
-                                                              delegate: nil,
+                                                              delegate: episodesDelegate,
                                                               title: "Episodes",
                                                               style: .plain)
         

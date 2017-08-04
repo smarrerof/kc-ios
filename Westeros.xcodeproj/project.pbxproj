@@ -16,6 +16,8 @@
 		492F0B321F2382620031EBDC /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F0B311F2382620031EBDC /* Delegates.swift */; };
 		496625661F32E9E600257936 /* SeasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496625641F32E9E600257936 /* SeasonViewController.swift */; };
 		496625671F32E9E600257936 /* SeasonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496625651F32E9E600257936 /* SeasonViewController.xib */; };
+		4966256A1F343B8A00257936 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496625681F343B8A00257936 /* EpisodeViewController.swift */; };
+		4966256B1F343B8A00257936 /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496625691F343B8A00257936 /* EpisodeViewController.xib */; };
 		497A25641F1D4A28008499AF /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A25621F1D4A28008499AF /* WikiViewController.swift */; };
 		497A25651F1D4A28008499AF /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497A25631F1D4A28008499AF /* WikiViewController.xib */; };
 		49C603641F2A7CDF00BD1B14 /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C603631F2A7CDF00BD1B14 /* SeasonTests.swift */; };
@@ -65,6 +67,8 @@
 		492F0B311F2382620031EBDC /* Delegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		496625641F32E9E600257936 /* SeasonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonViewController.swift; sourceTree = "<group>"; };
 		496625651F32E9E600257936 /* SeasonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeasonViewController.xib; sourceTree = "<group>"; };
+		496625681F343B8A00257936 /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
+		496625691F343B8A00257936 /* EpisodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
 		497A25621F1D4A28008499AF /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		497A25631F1D4A28008499AF /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		49C603631F2A7CDF00BD1B14 /* SeasonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 				497A25631F1D4A28008499AF /* WikiViewController.xib */,
 				496625641F32E9E600257936 /* SeasonViewController.swift */,
 				496625651F32E9E600257936 /* SeasonViewController.xib */,
+				496625681F343B8A00257936 /* EpisodeViewController.swift */,
+				496625691F343B8A00257936 /* EpisodeViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -345,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8E65141F0EC86D00BCC853 /* lannister.jpg in Resources */,
+				4966256B1F343B8A00257936 /* EpisodeViewController.xib in Resources */,
 				496625671F32E9E600257936 /* SeasonViewController.xib in Resources */,
 				497A25651F1D4A28008499AF /* WikiViewController.xib in Resources */,
 				ED8E65131F0EC86D00BCC853 /* codeIsComing.png in Resources */,
@@ -370,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				492F0B2B1F237B430031EBDC /* ArrayTableViewController.swift in Sources */,
+				4966256A1F343B8A00257936 /* EpisodeViewController.swift in Sources */,
 				49C603781F2E307100BD1B14 /* DateExtensions.swift in Sources */,
 				492F0B271F2373BE0031EBDC /* ArrayDataSource.swift in Sources */,
 				492F0B321F2382620031EBDC /* Delegates.swift in Sources */,

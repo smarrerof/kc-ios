@@ -29,4 +29,14 @@ final class Delegates {
             controller?.navigationController?.pushViewController(seasonVC, animated: true)
         })
     }
+    
+    static func episodesDelegate(model: [Episode]) -> ArrayDelegate<Episode> {
+        
+        return ArrayDelegate(model: model, selectRow: { (episode: Episode, tableView: UITableView, controller: UITableViewController?) -> Void in
+            
+            // La mostramos
+            let episodeVC = EpisodeViewController(model: episode)
+            controller?.navigationController?.pushViewController(episodeVC, animated: true)
+        })
+    }
 }
