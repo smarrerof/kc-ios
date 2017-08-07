@@ -6,17 +6,19 @@
 //  Copyright © 2017 Keepcoding. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 final class Episode {
     
     let name: String
+    let overview: String
     let airDate: Date
+    let poster: UIImage
     let season: Season
     
-    init(name: String, airDate: Date, season: Season) {
-        (self.name, self.airDate, self.season) = (name, airDate, season)
+    init(name: String, overview: String, airDate: Date, poster: UIImage, season: Season) {
+        (self.name, self.overview, self.airDate, self.poster, self.season) = (name, overview, airDate, poster, season)
     }
 }
 

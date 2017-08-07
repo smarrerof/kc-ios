@@ -6,19 +6,21 @@
 //  Copyright © 2017 Keepcoding. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 final class Season {
 
     let name: String
     let releaseDate: Date
+    let poster: UIImage
+    let overview: String
     
     private var _episodes : Episodes
     
     
-    init(name: String, releaseDate: Date) {
-        (self.name, self.releaseDate) = (name, releaseDate)
+    init(name: String, releaseDate: Date, poster: UIImage, overview: String) {
+        (self.name, self.releaseDate, self.poster, self.overview) = (name, releaseDate, poster, overview)
         _episodes = Episodes()
     }
 }

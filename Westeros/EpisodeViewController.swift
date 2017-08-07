@@ -9,7 +9,7 @@
 import UIKit
 
 class EpisodeViewController: UIViewController {
-
+    
     let model: Episode
     
     init(model: Episode) {

@@ -11,6 +11,10 @@ import UIKit
 class SeasonViewController: UIViewController {
 
     
+    //@IBOutlet weak var scrollView: UIScrollView!
+    //@IBOutlet weak var posterImageView: UIImageView!
+    //@IBOutlet weak var overviewLabel: UILabel!
+    
     let model: Season
     
     init(model: Season) {
@@ -45,6 +49,8 @@ class SeasonViewController: UIViewController {
     func syncViewWithModel() {
         
         // model -> view
+        //posterImageView.image = model.poster
+        //overviewLabel.text = model.overview
     }
     
     
