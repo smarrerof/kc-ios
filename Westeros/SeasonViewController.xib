@@ -6,11 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeasonViewController" customModule="Westeros" customModuleProvider="target">
             <connections>
+                <outlet property="generalInfoLabel" destination="xtX-ZC-1xo" id="6Ye-fd-h9o"/>
+                <outlet property="overviewLabel" destination="udR-Hk-Cry" id="IEO-Rh-YXZ"/>
+                <outlet property="posterImageView" destination="nct-oo-idg" id="WiZ-pv-Gxo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +22,51 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sj-RC-hNB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nct-oo-idg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="GlF-w8-b9l"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtX-ZC-1xo">
+                            <rect key="frame" x="8" y="158" width="359" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udR-Hk-Cry">
+                            <rect key="frame" x="8" y="187" width="359" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="udR-Hk-Cry" secondAttribute="bottom" constant="25" id="0jS-Tv-TVC"/>
+                        <constraint firstItem="xtX-ZC-1xo" firstAttribute="top" secondItem="nct-oo-idg" secondAttribute="bottom" constant="8" symbolic="YES" id="17O-VM-pEd"/>
+                        <constraint firstItem="xtX-ZC-1xo" firstAttribute="leading" secondItem="udR-Hk-Cry" secondAttribute="leading" id="1WL-b9-Lz8"/>
+                        <constraint firstAttribute="trailing" secondItem="nct-oo-idg" secondAttribute="trailing" id="3sP-fq-FwP"/>
+                        <constraint firstItem="nct-oo-idg" firstAttribute="top" secondItem="4sj-RC-hNB" secondAttribute="top" id="4Um-PL-gAi"/>
+                        <constraint firstItem="udR-Hk-Cry" firstAttribute="top" secondItem="xtX-ZC-1xo" secondAttribute="bottom" constant="8" symbolic="YES" id="IAv-NT-f8N"/>
+                        <constraint firstItem="xtX-ZC-1xo" firstAttribute="trailing" secondItem="udR-Hk-Cry" secondAttribute="trailing" id="T6J-dm-9Ze"/>
+                        <constraint firstItem="nct-oo-idg" firstAttribute="leading" secondItem="4sj-RC-hNB" secondAttribute="leading" id="Yut-wh-uWg"/>
+                        <constraint firstItem="nct-oo-idg" firstAttribute="centerX" secondItem="4sj-RC-hNB" secondAttribute="centerX" id="fpi-Wq-j4i"/>
+                        <constraint firstItem="xtX-ZC-1xo" firstAttribute="leading" secondItem="4sj-RC-hNB" secondAttribute="leadingMargin" id="gZk-QO-JtN"/>
+                        <constraint firstItem="nct-oo-idg" firstAttribute="centerX" secondItem="xtX-ZC-1xo" secondAttribute="centerX" id="vNe-QB-ufh"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4sj-RC-hNB" secondAttribute="trailing" id="3jT-8D-LUJ"/>
+                <constraint firstAttribute="bottom" secondItem="4sj-RC-hNB" secondAttribute="bottom" id="DNo-R8-XMT"/>
+                <constraint firstItem="4sj-RC-hNB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aoK-EE-fW6"/>
+                <constraint firstItem="4sj-RC-hNB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pZo-ah-Uvh"/>
+            </constraints>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>

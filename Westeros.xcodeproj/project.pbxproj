@@ -397,7 +397,6 @@
 			isa = PBXGroup;
 			children = (
 				ED853EE61F0C47E100F04AD6 /* Westeros */,
-				ED853EFB1F0C47E100F04AD6 /* WesterosTests */,
 				ED853EE51F0C47E100F04AD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -423,6 +422,7 @@
 				ED853EE71F0C47E100F04AD6 /* AppDelegate.swift */,
 				ED853EEE1F0C47E100F04AD6 /* Assets.xcassets */,
 				ED853EF01F0C47E100F04AD6 /* LaunchScreen.storyboard */,
+				ED853EFB1F0C47E100F04AD6 /* WesterosTests */,
 				ED853EF31F0C47E100F04AD6 /* Info.plist */,
 			);
 			path = Westeros;
@@ -442,7 +442,7 @@
 				49C6037B1F2E342D00BD1B14 /* ExtensionsTests.swift */,
 			);
 			path = WesterosTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		ED8E65101F0EC24100BCC853 /* Models */ = {
 			isa = PBXGroup;
