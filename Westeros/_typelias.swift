@@ -11,4 +11,5 @@ import Foundation
 
 typealias Words = String
 typealias Members = Set<Person>
+typealias Seasons = [Season]
 typealias Episodes = Set<Episode>
