@@ -1,12 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeViewController" customModule="Westeros" customModuleProvider="target">
             <connections>
+                <outlet property="nameLabel" destination="C2X-nV-osd" id="Kmh-BT-SJf"/>
+                <outlet property="overviewLabel" destination="vFc-eD-BDR" id="9N0-UK-EVi"/>
+                <outlet property="posterImageView" destination="DCg-Is-goa" id="fqF-g8-L5O"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +22,52 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a07-bo-Tcc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DCg-Is-goa">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="wAz-pA-RDE"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2X-nV-osd">
+                            <rect key="frame" x="8" y="208" width="359" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFc-eD-BDR">
+                            <rect key="frame" x="8" y="237" width="359" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="DCg-Is-goa" firstAttribute="top" secondItem="a07-bo-Tcc" secondAttribute="top" id="4Me-c7-7HT"/>
+                        <constraint firstItem="C2X-nV-osd" firstAttribute="leading" secondItem="vFc-eD-BDR" secondAttribute="leading" id="Brr-zZ-pRC"/>
+                        <constraint firstItem="C2X-nV-osd" firstAttribute="top" secondItem="DCg-Is-goa" secondAttribute="bottom" constant="8" symbolic="YES" id="M1N-0o-phZ"/>
+                        <constraint firstAttribute="bottom" secondItem="vFc-eD-BDR" secondAttribute="bottom" constant="25" id="UgK-nf-shn"/>
+                        <constraint firstItem="C2X-nV-osd" firstAttribute="trailing" secondItem="vFc-eD-BDR" secondAttribute="trailing" id="Uvg-RA-foA"/>
+                        <constraint firstItem="vFc-eD-BDR" firstAttribute="top" secondItem="C2X-nV-osd" secondAttribute="bottom" constant="8" symbolic="YES" id="WwN-uI-MJI"/>
+                        <constraint firstItem="DCg-Is-goa" firstAttribute="leading" secondItem="a07-bo-Tcc" secondAttribute="leading" id="g53-qo-8sp"/>
+                        <constraint firstItem="C2X-nV-osd" firstAttribute="leading" secondItem="a07-bo-Tcc" secondAttribute="leadingMargin" id="lT5-uu-gmQ"/>
+                        <constraint firstItem="DCg-Is-goa" firstAttribute="centerX" secondItem="C2X-nV-osd" secondAttribute="centerX" id="pG1-qW-1Aj"/>
+                        <constraint firstItem="DCg-Is-goa" firstAttribute="centerX" secondItem="a07-bo-Tcc" secondAttribute="centerX" id="sko-A9-iDt"/>
+                        <constraint firstAttribute="trailing" secondItem="DCg-Is-goa" secondAttribute="trailing" id="zn1-O5-etm"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="a07-bo-Tcc" secondAttribute="bottom" id="Pm7-mX-FXU"/>
+                <constraint firstAttribute="trailing" secondItem="a07-bo-Tcc" secondAttribute="trailing" id="dKO-xy-uZf"/>
+                <constraint firstItem="a07-bo-Tcc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="s2L-el-xDM"/>
+                <constraint firstItem="a07-bo-Tcc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xq4-9Z-sAR"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
 </document>

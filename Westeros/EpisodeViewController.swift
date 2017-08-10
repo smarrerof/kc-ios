@@ -10,6 +10,10 @@ import UIKit
 
 class EpisodeViewController: UIViewController {
     
+    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var overviewLabel: UILabel!
+    
     let model: Episode
     
     init(model: Episode) {
@@ -31,5 +35,9 @@ class EpisodeViewController: UIViewController {
     func syncViewWithModel() {
         
         // model -> view
+        posterImageView.image = model.poster
+        nameLabel.text = "\(model.name) (\(model.airDate.toString()))"
+        overviewLabel.text = model.overview
+        overviewLabel.sizeToFit()
     }
 }
