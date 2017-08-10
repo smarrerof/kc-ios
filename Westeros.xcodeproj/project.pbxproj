@@ -35,6 +35,8 @@
 		4966258E1F37BBA200257936 /* episode1x08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 496625841F37BBA200257936 /* episode1x08.jpg */; };
 		4966258F1F37BBA200257936 /* episode1x09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 496625851F37BBA200257936 /* episode1x09.jpg */; };
 		496625901F37BBA200257936 /* episode1x10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 496625861F37BBA200257936 /* episode1x10.jpg */; };
+		49662E3D1F3C80A600CC6CB8 /* houses.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E3C1F3C80A600CC6CB8 /* houses.png */; };
+		49662E3F1F3C80B400CC6CB8 /* seasons.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E3E1F3C80B400CC6CB8 /* seasons.png */; };
 		497A25641F1D4A28008499AF /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A25621F1D4A28008499AF /* WikiViewController.swift */; };
 		497A25651F1D4A28008499AF /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497A25631F1D4A28008499AF /* WikiViewController.xib */; };
 		49AEAA801F382F96002B794D /* episode2x01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49AEAA761F382F96002B794D /* episode2x01.jpg */; };
@@ -157,6 +159,8 @@
 		496625841F37BBA200257936 /* episode1x08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode1x08.jpg; sourceTree = "<group>"; };
 		496625851F37BBA200257936 /* episode1x09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode1x09.jpg; sourceTree = "<group>"; };
 		496625861F37BBA200257936 /* episode1x10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode1x10.jpg; sourceTree = "<group>"; };
+		49662E3C1F3C80A600CC6CB8 /* houses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houses.png; sourceTree = "<group>"; };
+		49662E3E1F3C80B400CC6CB8 /* seasons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seasons.png; sourceTree = "<group>"; };
 		497A25621F1D4A28008499AF /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		497A25631F1D4A28008499AF /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		49AEAA761F382F96002B794D /* episode2x01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode2x01.jpg; sourceTree = "<group>"; };
@@ -375,6 +379,15 @@
 			name = Episodes;
 			sourceTree = "<group>";
 		};
+		49662E3B1F3C806D00CC6CB8 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				49662E3E1F3C80B400CC6CB8 /* seasons.png */,
+				49662E3C1F3C80A600CC6CB8 /* houses.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		49C603691F2A806200BD1B14 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +473,7 @@
 		ED8E65151F0EC87600BCC853 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				49662E3B1F3C806D00CC6CB8 /* Icons */,
 				4966257B1F37BB7700257936 /* Episodes */,
 				4966257A1F372C7700257936 /* Seasons */,
 				ED8E65111F0EC86D00BCC853 /* codeIsComing.png */,
@@ -605,6 +619,7 @@
 				49AEAAD91F38319E002B794D /* episode6x06.jpg in Resources */,
 				49AEAACA1F38319E002B794D /* episode5x01.jpg in Resources */,
 				49AEAA811F382F96002B794D /* episode2x02.jpg in Resources */,
+				49662E3D1F3C80A600CC6CB8 /* houses.png in Resources */,
 				49AEAA9D1F38309F002B794D /* episode3x10.jpg in Resources */,
 				49AEAA891F382F96002B794D /* episode2x10.jpg in Resources */,
 				496625671F32E9E600257936 /* SeasonViewController.xib in Resources */,
@@ -650,6 +665,7 @@
 				ED853EEF1F0C47E100F04AD6 /* Assets.xcassets in Resources */,
 				49AEAAD31F38319E002B794D /* episode5x10.jpg in Resources */,
 				49AEAAC01F38319E002B794D /* episode4x01.jpg in Resources */,
+				49662E3F1F3C80B400CC6CB8 /* seasons.png in Resources */,
 				49AEAA9C1F38309F002B794D /* episode3x09.jpg in Resources */,
 				49AEAACC1F38319E002B794D /* episode5x03.jpg in Resources */,
 				496625761F372C6D00257936 /* season4.jpg in Resources */,

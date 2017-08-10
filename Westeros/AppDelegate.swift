@@ -44,6 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootViewController = UITabBarController()
         rootViewController.viewControllers = [housesViewController, seasonsViewController]
         
+        // Configuramos los tabBarItems
+        housesViewController.tabBarItem = UITabBarItem(title: "Houses", image: #imageLiteral(resourceName: "houses.png"), selectedImage: nil)
+        seasonsViewController.tabBarItem = UITabBarItem(title: "Seasons", image: #imageLiteral(resourceName: "seasons.png"), selectedImage: nil)
+        
         // Asignamos el RootVC
         window?.rootViewController = rootViewController
         
