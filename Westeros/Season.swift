@@ -32,7 +32,7 @@ extension Season {
     
     func add(episode: Episode){
         
-        guard episode.season.name == self.name else {
+        guard episode.season!.name == self.name else {
             return
         }
         

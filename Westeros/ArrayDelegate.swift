@@ -19,7 +19,7 @@ final class ArrayDelegate<Element>: NSObject, UITableViewDelegate {
     private let _selectRow: SelectRow
     
     
-    public var controller: UITableViewController?
+    public weak var controller: UITableViewController?
     
     
     init(model: Elements, selectRow: @escaping SelectRow) {

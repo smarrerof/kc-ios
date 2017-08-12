@@ -11,7 +11,7 @@ import Foundation
 final class Person {
     
     let name: String
-    let house: House
+    weak var house: House?
     private let _alias: String?
     
     var alias : String{
@@ -37,14 +37,14 @@ extension Person {
     
     var fullName : String {
         get{
-            return "\(name) \(house.name)"
+            return "\(name) \(house!.name)"
         }
     }
 }
 
 extension Person {
     var proxy : String {
-        return "\(name) \(alias) \(house.name)"
+        return "\(name) \(alias) \(house!.name)"
     }
 }
 

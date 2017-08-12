@@ -15,7 +15,7 @@ final class Episode {
     let overview: String
     let airDate: Date
     let poster: UIImage
-    let season: Season
+    weak var season: Season?
     
     init(name: String, overview: String, airDate: Date, poster: UIImage, season: Season) {
         (self.name, self.overview, self.airDate, self.poster, self.season) = (name, overview, airDate, poster, season)
@@ -25,11 +25,11 @@ final class Episode {
 extension Episode {
     
     private var _proxyForEquatable : String {
-        return "\(name) \(season.name)"
+        return "\(name) \(season!.name)"
     }
     
     private var _proxyForHashable: String {
-        return "\(name) \(season.name)"
+        return "\(name) \(season!.name)"
     }    
 }
 
