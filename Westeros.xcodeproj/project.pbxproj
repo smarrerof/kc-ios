@@ -37,6 +37,16 @@
 		496625901F37BBA200257936 /* episode1x10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 496625861F37BBA200257936 /* episode1x10.jpg */; };
 		49662E3D1F3C80A600CC6CB8 /* houses.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E3C1F3C80A600CC6CB8 /* houses.png */; };
 		49662E3F1F3C80B400CC6CB8 /* seasons.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E3E1F3C80B400CC6CB8 /* seasons.png */; };
+		49662E461F41FE1700CC6CB8 /* aryaStark.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E411F41FE1700CC6CB8 /* aryaStark.png */; };
+		49662E471F41FE1700CC6CB8 /* branStark.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E421F41FE1700CC6CB8 /* branStark.png */; };
+		49662E481F41FE1700CC6CB8 /* rickonStark.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E431F41FE1700CC6CB8 /* rickonStark.png */; };
+		49662E491F41FE1700CC6CB8 /* robbStark.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E441F41FE1700CC6CB8 /* robbStark.png */; };
+		49662E4A1F41FE1700CC6CB8 /* sansaStark.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E451F41FE1700CC6CB8 /* sansaStark.png */; };
+		49662E4C1F41FEAA00CC6CB8 /* nophoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E4B1F41FEAA00CC6CB8 /* nophoto.png */; };
+		49662E511F42148100CC6CB8 /* cerseiLannister.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E4D1F42148100CC6CB8 /* cerseiLannister.png */; };
+		49662E521F42148100CC6CB8 /* daenerysTargaryen.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E4E1F42148100CC6CB8 /* daenerysTargaryen.png */; };
+		49662E531F42148100CC6CB8 /* jaimeLannister.png in Resources */ = {isa = PBXBuildFile; fileRef = 49662E4F1F42148100CC6CB8 /* jaimeLannister.png */; };
+		49662E541F42148100CC6CB8 /* tyrionLannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49662E501F42148100CC6CB8 /* tyrionLannister.jpg */; };
 		497A25641F1D4A28008499AF /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A25621F1D4A28008499AF /* WikiViewController.swift */; };
 		497A25651F1D4A28008499AF /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497A25631F1D4A28008499AF /* WikiViewController.xib */; };
 		49AEAA801F382F96002B794D /* episode2x01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49AEAA761F382F96002B794D /* episode2x01.jpg */; };
@@ -161,6 +171,16 @@
 		496625861F37BBA200257936 /* episode1x10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode1x10.jpg; sourceTree = "<group>"; };
 		49662E3C1F3C80A600CC6CB8 /* houses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houses.png; sourceTree = "<group>"; };
 		49662E3E1F3C80B400CC6CB8 /* seasons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seasons.png; sourceTree = "<group>"; };
+		49662E411F41FE1700CC6CB8 /* aryaStark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aryaStark.png; sourceTree = "<group>"; };
+		49662E421F41FE1700CC6CB8 /* branStark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = branStark.png; sourceTree = "<group>"; };
+		49662E431F41FE1700CC6CB8 /* rickonStark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rickonStark.png; sourceTree = "<group>"; };
+		49662E441F41FE1700CC6CB8 /* robbStark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robbStark.png; sourceTree = "<group>"; };
+		49662E451F41FE1700CC6CB8 /* sansaStark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sansaStark.png; sourceTree = "<group>"; };
+		49662E4B1F41FEAA00CC6CB8 /* nophoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nophoto.png; sourceTree = "<group>"; };
+		49662E4D1F42148100CC6CB8 /* cerseiLannister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cerseiLannister.png; sourceTree = "<group>"; };
+		49662E4E1F42148100CC6CB8 /* daenerysTargaryen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daenerysTargaryen.png; sourceTree = "<group>"; };
+		49662E4F1F42148100CC6CB8 /* jaimeLannister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jaimeLannister.png; sourceTree = "<group>"; };
+		49662E501F42148100CC6CB8 /* tyrionLannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrionLannister.jpg; sourceTree = "<group>"; };
 		497A25621F1D4A28008499AF /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		497A25631F1D4A28008499AF /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		49AEAA761F382F96002B794D /* episode2x01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode2x01.jpg; sourceTree = "<group>"; };
@@ -388,6 +408,23 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		49662E401F41FDFB00CC6CB8 /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				49662E4B1F41FEAA00CC6CB8 /* nophoto.png */,
+				49662E411F41FE1700CC6CB8 /* aryaStark.png */,
+				49662E421F41FE1700CC6CB8 /* branStark.png */,
+				49662E431F41FE1700CC6CB8 /* rickonStark.png */,
+				49662E441F41FE1700CC6CB8 /* robbStark.png */,
+				49662E451F41FE1700CC6CB8 /* sansaStark.png */,
+				49662E4D1F42148100CC6CB8 /* cerseiLannister.png */,
+				49662E4F1F42148100CC6CB8 /* jaimeLannister.png */,
+				49662E501F42148100CC6CB8 /* tyrionLannister.jpg */,
+				49662E4E1F42148100CC6CB8 /* daenerysTargaryen.png */,
+			);
+			name = Members;
+			sourceTree = "<group>";
+		};
 		49C603691F2A806200BD1B14 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +510,7 @@
 		ED8E65151F0EC87600BCC853 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				49662E401F41FDFB00CC6CB8 /* Members */,
 				49662E3B1F3C806D00CC6CB8 /* Icons */,
 				4966257B1F37BB7700257936 /* Episodes */,
 				4966257A1F372C7700257936 /* Seasons */,
@@ -597,12 +635,14 @@
 				49AEAA801F382F96002B794D /* episode2x01.jpg in Resources */,
 				49AEAA991F38309F002B794D /* episode3x06.jpg in Resources */,
 				4966258A1F37BBA200257936 /* episode1x04.jpg in Resources */,
+				49662E511F42148100CC6CB8 /* cerseiLannister.png in Resources */,
 				ED8E65141F0EC86D00BCC853 /* lannister.jpg in Resources */,
 				49AEAA861F382F96002B794D /* episode2x07.jpg in Resources */,
 				49AEAAE01F38319E002B794D /* episode7x03.jpg in Resources */,
 				496625891F37BBA200257936 /* episode1x03.jpg in Resources */,
 				49AEAAD61F38319E002B794D /* episode6x03.jpg in Resources */,
 				49AEAA971F38309F002B794D /* episode3x04.jpg in Resources */,
+				49662E4A1F41FE1700CC6CB8 /* sansaStark.png in Resources */,
 				4966256B1F343B8A00257936 /* EpisodeViewController.xib in Resources */,
 				49AEAAC31F38319E002B794D /* episode4x04.jpg in Resources */,
 				49AEAA9A1F38309F002B794D /* episode3x07.jpg in Resources */,
@@ -615,6 +655,7 @@
 				49AEAA841F382F96002B794D /* episode2x05.jpg in Resources */,
 				49AEAADD1F38319E002B794D /* episode6x10.jpg in Resources */,
 				49AEAAD41F38319E002B794D /* episode6x01.jpg in Resources */,
+				49662E531F42148100CC6CB8 /* jaimeLannister.png in Resources */,
 				49AEAADC1F38319E002B794D /* episode6x09.jpg in Resources */,
 				49AEAAD91F38319E002B794D /* episode6x06.jpg in Resources */,
 				49AEAACA1F38319E002B794D /* episode5x01.jpg in Resources */,
@@ -624,13 +665,17 @@
 				49AEAA891F382F96002B794D /* episode2x10.jpg in Resources */,
 				496625671F32E9E600257936 /* SeasonViewController.xib in Resources */,
 				49AEAAD51F38319E002B794D /* episode6x02.jpg in Resources */,
+				49662E461F41FE1700CC6CB8 /* aryaStark.png in Resources */,
 				49AEAAC61F38319E002B794D /* episode4x07.jpg in Resources */,
 				496625771F372C6D00257936 /* season5.jpg in Resources */,
 				497A25651F1D4A28008499AF /* WikiViewController.xib in Resources */,
 				496625881F37BBA200257936 /* episode1x02.jpg in Resources */,
+				49662E541F42148100CC6CB8 /* tyrionLannister.jpg in Resources */,
 				496625731F372C6D00257936 /* season1.jpg in Resources */,
 				49AEAA831F382F96002B794D /* episode2x04.jpg in Resources */,
 				49AEAAC11F38319E002B794D /* episode4x02.jpg in Resources */,
+				49662E481F41FE1700CC6CB8 /* rickonStark.png in Resources */,
+				49662E521F42148100CC6CB8 /* daenerysTargaryen.png in Resources */,
 				49AEAA981F38309F002B794D /* episode3x05.jpg in Resources */,
 				49AEAA961F38309F002B794D /* episode3x03.jpg in Resources */,
 				49AEAAC71F38319E002B794D /* episode4x08.jpg in Resources */,
@@ -643,11 +688,13 @@
 				ED32F0421F1CB60D000408C4 /* targaryenSmall.jpg in Resources */,
 				49AEAACD1F38319E002B794D /* episode5x04.jpg in Resources */,
 				4966258B1F37BBA200257936 /* episode1x05.jpg in Resources */,
+				49662E4C1F41FEAA00CC6CB8 /* nophoto.png in Resources */,
 				EDFDFAA01F14128D00699250 /* HouseViewController.xib in Resources */,
 				4966258C1F37BBA200257936 /* episode1x06.jpg in Resources */,
 				496625791F372C6D00257936 /* season7.jpg in Resources */,
 				496625871F37BBA200257936 /* episode1x01.jpg in Resources */,
 				49AEAA951F38309F002B794D /* episode3x02.jpg in Resources */,
+				49662E471F41FE1700CC6CB8 /* branStark.png in Resources */,
 				49AEAAC81F38319E002B794D /* episode4x09.jpg in Resources */,
 				49AEAA941F38309F002B794D /* episode3x01.jpg in Resources */,
 				49AEAA851F382F96002B794D /* episode2x06.jpg in Resources */,
@@ -658,6 +705,7 @@
 				49AEAAD21F38319E002B794D /* episode5x09.jpg in Resources */,
 				49AEAAC21F38319E002B794D /* episode4x03.jpg in Resources */,
 				ED853EF21F0C47E100F04AD6 /* LaunchScreen.storyboard in Resources */,
+				49662E491F41FE1700CC6CB8 /* robbStark.png in Resources */,
 				49AEAADF1F38319E002B794D /* episode7x02.jpg in Resources */,
 				49AEAA9B1F38309F002B794D /* episode3x08.jpg in Resources */,
 				4966258F1F37BBA200257936 /* episode1x09.jpg in Resources */,

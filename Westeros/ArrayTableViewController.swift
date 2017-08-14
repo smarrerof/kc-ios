@@ -23,6 +23,8 @@ class ArrayTableViewController<Element>: UITableViewController {
         
         tableView.dataSource = self.dataSource
         tableView.delegate = self.delegate
+        tableView.rowHeight = 50
+        
         self.delegate?.controller = self
     }
     

@@ -46,17 +46,20 @@ extension LocalFactory : HouseFactory {
                                   words: "Fire & Blood",
                                   url: targaryenURL)
             
-            let robb = Person(name: "Robb", alias: "The young wolf", house: stark)
-            let arya = Person(name: "Arya", house: stark)
+            let robb = Person(name: "Robb", alias: "The young wolf", house: stark, photo: #imageLiteral(resourceName: "robbStark.png"))
+            let sansa = Person(name: "Sansa", house: stark, photo: #imageLiteral(resourceName: "sansaStark.png"))
+            let arya = Person(name: "Arya", house: stark, photo: #imageLiteral(resourceName: "aryaStark.png"))
+            let bran = Person(name: "Bran", house: stark, photo: #imageLiteral(resourceName: "branStark.png"))
+            let rickon = Person(name: "Rickon", house: stark, photo: #imageLiteral(resourceName: "rickonStark.png"))
             
-            let tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannister)
-            let jaime = Person(name: "Jaime", alias: "Kingslayer", house: lannister)
-            let cersei = Person(name: "Cersei", house: lannister)
+            let tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannister, photo: #imageLiteral(resourceName: "tyrionLannister.jpg"))
+            let jaime = Person(name: "Jaime", alias: "Kingslayer", house: lannister, photo: #imageLiteral(resourceName: "jaimeLannister.png"))
+            let cersei = Person(name: "Cersei", house: lannister, photo: #imageLiteral(resourceName: "cerseiLannister.png"))
             
-            let dani = Person(name: "Daenerys", alias: "Mother of dragons", house: targaryen)
+            let dani = Person(name: "Daenerys", alias: "Mother of dragons", house: targaryen, photo: #imageLiteral(resourceName: "daenerysTargaryen.png"))
             
             // Añadir los personajes a las casas
-            stark.add(persons: robb, arya)
+            stark.add(persons: robb, sansa, arya, bran, rickon)
             lannister.add(persons: tyrion, jaime, cersei)
             targaryen.add(person: dani)
             

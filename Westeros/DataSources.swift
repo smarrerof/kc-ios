@@ -35,9 +35,11 @@ final class DataSources {
             let cellID = "PersonCell"
             var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
             if cell == nil {
-                cell = UITableViewCell(style: .default, reuseIdentifier: cellID)
+                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
             }
             
+            cell?.imageView?.image = person.photo
+            cell?.imageView?.layer.masksToBounds = true
             cell?.textLabel?.text = person.fullName
             
             return cell!
