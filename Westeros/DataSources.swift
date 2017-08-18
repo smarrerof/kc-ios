@@ -66,15 +66,13 @@ final class DataSources {
         return ArrayDataSource(model: model, cellMaker: {(episode: Episode, tableView: UITableView) -> UITableViewCell in
             
             let cellID = "EpisodeCell"
-            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
-            if cell == nil {
-                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
-            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! EpisodeTableViewCell
             
-            cell?.textLabel?.text = episode.name
-            cell?.detailTextLabel?.text = episode.airDate.toString()
+            cell.posterImageView.image = episode.poster
+            cell.nameLabel.text = episode.name
+            cell.airDateLabel.text = episode.airDate.toString()
             
-            return cell!
+            return cell
         })
     }
 }

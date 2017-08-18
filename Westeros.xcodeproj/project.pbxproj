@@ -49,6 +49,8 @@
 		49662E541F42148100CC6CB8 /* tyrionLannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49662E501F42148100CC6CB8 /* tyrionLannister.jpg */; };
 		49662E581F42C65A00CC6CB8 /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49662E561F42C65A00CC6CB8 /* SeasonTableViewCell.swift */; };
 		49662E591F42C65A00CC6CB8 /* SeasonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49662E571F42C65A00CC6CB8 /* SeasonTableViewCell.xib */; };
+		49662E5C1F474F7A00CC6CB8 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49662E5A1F474F7A00CC6CB8 /* EpisodeTableViewCell.swift */; };
+		49662E5D1F474F7A00CC6CB8 /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49662E5B1F474F7A00CC6CB8 /* EpisodeTableViewCell.xib */; };
 		497A25641F1D4A28008499AF /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A25621F1D4A28008499AF /* WikiViewController.swift */; };
 		497A25651F1D4A28008499AF /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497A25631F1D4A28008499AF /* WikiViewController.xib */; };
 		49AEAA801F382F96002B794D /* episode2x01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49AEAA761F382F96002B794D /* episode2x01.jpg */; };
@@ -185,6 +187,8 @@
 		49662E501F42148100CC6CB8 /* tyrionLannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrionLannister.jpg; sourceTree = "<group>"; };
 		49662E561F42C65A00CC6CB8 /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		49662E571F42C65A00CC6CB8 /* SeasonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeasonTableViewCell.xib; sourceTree = "<group>"; };
+		49662E5A1F474F7A00CC6CB8 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		49662E5B1F474F7A00CC6CB8 /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		497A25621F1D4A28008499AF /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		497A25631F1D4A28008499AF /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		49AEAA761F382F96002B794D /* episode2x01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode2x01.jpg; sourceTree = "<group>"; };
@@ -434,6 +438,8 @@
 			children = (
 				49662E561F42C65A00CC6CB8 /* SeasonTableViewCell.swift */,
 				49662E571F42C65A00CC6CB8 /* SeasonTableViewCell.xib */,
+				49662E5A1F474F7A00CC6CB8 /* EpisodeTableViewCell.swift */,
+				49662E5B1F474F7A00CC6CB8 /* EpisodeTableViewCell.xib */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -662,6 +668,7 @@
 				49AEAA9A1F38309F002B794D /* episode3x07.jpg in Resources */,
 				496625751F372C6D00257936 /* season3.jpg in Resources */,
 				49AEAAC91F38319E002B794D /* episode4x10.jpg in Resources */,
+				49662E5D1F474F7A00CC6CB8 /* EpisodeTableViewCell.xib in Resources */,
 				49AEAAC41F38319E002B794D /* episode4x05.jpg in Resources */,
 				49AEAADE1F38319E002B794D /* episode7x01.jpg in Resources */,
 				49AEAACF1F38319E002B794D /* episode5x06.jpg in Resources */,
@@ -777,6 +784,7 @@
 				EDE69E621F15622400CE93C9 /* Repository.swift in Sources */,
 				492F0B2E1F237CD00031EBDC /* DataSources.swift in Sources */,
 				497A25641F1D4A28008499AF /* WikiViewController.swift in Sources */,
+				49662E5C1F474F7A00CC6CB8 /* EpisodeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

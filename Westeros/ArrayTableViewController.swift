@@ -32,6 +32,7 @@ class ArrayTableViewController<Element>: UITableViewController {
     
     override func viewDidLoad() {
         tableView.register(UINib(nibName: "SeasonTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasonCell")
+        tableView.register(UINib(nibName: "EpisodeTableViewCell", bundle: nil), forCellReuseIdentifier: "EpisodeCell")
     }
 
     required init?(coder aDecoder: NSCoder) {
