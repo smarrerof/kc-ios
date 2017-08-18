@@ -23,11 +23,17 @@ class ArrayTableViewController<Element>: UITableViewController {
         
         tableView.dataSource = self.dataSource
         tableView.delegate = self.delegate
-        tableView.rowHeight = 50
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 125
         
         self.delegate?.controller = self
     }
     
+    override func viewDidLoad() {
+        tableView.register(UINib(nibName: "SeasonTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasonCell")
+    }
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

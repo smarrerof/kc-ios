@@ -26,6 +26,7 @@ final class Season {
 }
 
 extension Season {
+    
     var count : Int {
         return _episodes.count
     }
@@ -50,6 +51,14 @@ extension Season {
     func sortedEpisodes() -> [Episode] {
         return _episodes.sorted()
     }
+}
+
+extension Season {
+    
+    var shortDescription: String {
+        return "\(releaseDate.toString()). \(count) episodes"
+    }
+    
 }
 
 extension Season {

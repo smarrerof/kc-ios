@@ -11,7 +11,7 @@ import UIKit
 class SeasonViewController: UIViewController {
     
     @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var generalInfoLabel: UILabel!
+    @IBOutlet weak var shortDescriptionLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
     
     let model: Season
@@ -49,7 +49,7 @@ class SeasonViewController: UIViewController {
         
         // model -> view
         posterImageView.image = model.poster
-        generalInfoLabel.text = "\(model.releaseDate.toString()). \(model.count) episodes"
+        shortDescriptionLabel.text = model.shortDescription
         overviewLabel.text = model.overview
         overviewLabel.sizeToFit()
     }

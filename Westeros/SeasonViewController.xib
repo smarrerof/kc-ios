@@ -12,9 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeasonViewController" customModule="Westeros" customModuleProvider="target">
             <connections>
-                <outlet property="generalInfoLabel" destination="xtX-ZC-1xo" id="6Ye-fd-h9o"/>
                 <outlet property="overviewLabel" destination="udR-Hk-Cry" id="IEO-Rh-YXZ"/>
                 <outlet property="posterImageView" destination="nct-oo-idg" id="WiZ-pv-Gxo"/>
+                <outlet property="shortDescriptionLabel" destination="xtX-ZC-1xo" id="9vY-ed-7Ad"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
