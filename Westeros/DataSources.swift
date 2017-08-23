@@ -33,16 +33,12 @@ final class DataSources {
         return ArrayDataSource(model: model, cellMaker: {(person: Person, tableView: UITableView) -> UITableViewCell in
             
             let cellID = "PersonCell"
-            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
-            if cell == nil {
-                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
-            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! PersonTableViewCell
+
+            cell.photoImageView.image = person.photo
+            cell.fullNameLabel.text = person.fullName
             
-            cell?.imageView?.image = person.photo
-            cell?.imageView?.layer.masksToBounds = true
-            cell?.textLabel?.text = person.fullName
-            
-            return cell!
+            return cell
         })
     }
     

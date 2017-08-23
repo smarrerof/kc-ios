@@ -25,7 +25,9 @@ class ArrayTableViewController<Element>: UITableViewController {
         tableView.delegate = self.delegate
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 125
+        tableView.estimatedRowHeight = 44
+        //tableView.separatorInset.left = 0
+        //tableView.separatorInset.right = 0
         
         self.delegate?.controller = self
     }
@@ -33,6 +35,7 @@ class ArrayTableViewController<Element>: UITableViewController {
     override func viewDidLoad() {
         tableView.register(UINib(nibName: "SeasonTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasonCell")
         tableView.register(UINib(nibName: "EpisodeTableViewCell", bundle: nil), forCellReuseIdentifier: "EpisodeCell")
+        tableView.register(UINib(nibName: "PersonTableViewCell", bundle: nil), forCellReuseIdentifier: "PersonCell")
     }
 
     required init?(coder aDecoder: NSCoder) {

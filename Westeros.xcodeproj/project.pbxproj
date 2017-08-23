@@ -14,6 +14,8 @@
 		492F0B2E1F237CD00031EBDC /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F0B2D1F237CD00031EBDC /* DataSources.swift */; };
 		492F0B301F2381850031EBDC /* ArrayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F0B2F1F2381850031EBDC /* ArrayDelegate.swift */; };
 		492F0B321F2382620031EBDC /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F0B311F2382620031EBDC /* Delegates.swift */; };
+		494165C11F4D9C1700B39F25 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494165BF1F4D9C1700B39F25 /* PersonTableViewCell.swift */; };
+		494165C21F4D9C1700B39F25 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494165C01F4D9C1700B39F25 /* PersonTableViewCell.xib */; };
 		496625661F32E9E600257936 /* SeasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496625641F32E9E600257936 /* SeasonViewController.swift */; };
 		496625671F32E9E600257936 /* SeasonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496625651F32E9E600257936 /* SeasonViewController.xib */; };
 		4966256A1F343B8A00257936 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496625681F343B8A00257936 /* EpisodeViewController.swift */; };
@@ -153,6 +155,8 @@
 		492F0B2D1F237CD00031EBDC /* DataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
 		492F0B2F1F2381850031EBDC /* ArrayDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDelegate.swift; sourceTree = "<group>"; };
 		492F0B311F2382620031EBDC /* Delegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
+		494165BF1F4D9C1700B39F25 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		494165C01F4D9C1700B39F25 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		496625641F32E9E600257936 /* SeasonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonViewController.swift; sourceTree = "<group>"; };
 		496625651F32E9E600257936 /* SeasonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeasonViewController.xib; sourceTree = "<group>"; };
 		496625681F343B8A00257936 /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
@@ -442,6 +446,8 @@
 				49662E571F42C65A00CC6CB8 /* SeasonTableViewCell.xib */,
 				49662E5A1F474F7A00CC6CB8 /* EpisodeTableViewCell.swift */,
 				49662E5B1F474F7A00CC6CB8 /* EpisodeTableViewCell.xib */,
+				494165BF1F4D9C1700B39F25 /* PersonTableViewCell.swift */,
+				494165C01F4D9C1700B39F25 /* PersonTableViewCell.xib */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -656,6 +662,7 @@
 			files = (
 				4966258E1F37BBA200257936 /* episode1x08.jpg in Resources */,
 				49AEAA801F382F96002B794D /* episode2x01.jpg in Resources */,
+				494165C21F4D9C1700B39F25 /* PersonTableViewCell.xib in Resources */,
 				49AEAA991F38309F002B794D /* episode3x06.jpg in Resources */,
 				4966258A1F37BBA200257936 /* episode1x04.jpg in Resources */,
 				49662E511F42148100CC6CB8 /* cerseiLannister.png in Resources */,
@@ -772,6 +779,7 @@
 				492F0B271F2373BE0031EBDC /* ArrayDataSource.swift in Sources */,
 				49662E581F42C65A00CC6CB8 /* SeasonTableViewCell.swift in Sources */,
 				492F0B321F2382620031EBDC /* Delegates.swift in Sources */,
+				494165C11F4D9C1700B39F25 /* PersonTableViewCell.swift in Sources */,
 				492F0B301F2381850031EBDC /* ArrayDelegate.swift in Sources */,
 				496625661F32E9E600257936 /* SeasonViewController.swift in Sources */,
 				ED8E65191F0ECD8500BCC853 /* Person.swift in Sources */,
